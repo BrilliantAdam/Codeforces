@@ -1,3 +1,7 @@
+//brilliantadam
+//29/5/2024
+//https://codeforces.com/contest/766/problem/A
+//Mostafa Saad Ibrahim Sheet
 #include <iostream>
 #include <string>
 #include <algorithm> // For max function
