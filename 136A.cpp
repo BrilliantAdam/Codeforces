@@ -1,4 +1,4 @@
-//Author: Ahmed Refaat 
+//brilliantadam
  
 #include <bits/stdc++.h>
 using namespace std;
