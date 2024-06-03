@@ -1,5 +1,6 @@
 //brilliantadam
 //3/6/2024
+//Map function
 #include <bits/stdc++.h>
 using namespace std;
  
