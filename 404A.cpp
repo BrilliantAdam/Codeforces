@@ -1,6 +1,6 @@
 //brilliantadam
 //5/6/2024
-//Unsolved yet, need to work on it later. ( Took me over 3 hours)
+//Accepted but need to solve it again with better algorithm
 #include<bits/stdc++.h>
 using namespace std;
  int cntDistinct(string str)
@@ -10,7 +10,7 @@ using namespace std;
     for (int i = 0; i < str.size(); i++) {
         s.insert(str[i]);
     }
-
+ 
     return s.size();
 }
 int main() {
@@ -18,20 +18,25 @@ int main() {
     cin >> n;
     l = n-1;
     string s[n] , m;
+    char flag;
     for(int i = 0; i < n; i++) {
         cin >> s[i];
+        m += s[i];
     }
+    flag = s[0][0];
     for(int i = 0; i < n-1; i++) {
         if(s[i][i] != s[i+1][i+1] || s[i][l] != s[i+1][l-1]){
             cout << "NO";
             return 0;
         }
-        else{
-            m += s[i];
-        }
         l--;
     }
-    if(cntDistinct(m) == 2)
+    for(int i=0; i< m.length() ; i++){
+        if(m[i] == flag){
+            m.erase(i, 1);
+        }
+    }
+    if(cntDistinct(m) == 1 && m[0] != flag && (n*n - (n+n-1) == m.length()) )
         cout << "YES";
     else
         cout << "NO";
