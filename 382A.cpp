@@ -1,7 +1,7 @@
 //brilliantadam
 //15/6/2024
 //With Assistance to learn something new
-//learned abt c_str()
+//learned abt c_str() => It's necessary for fixing the format of std::string for the 'printf' function, since it only expects 'char *' 
 #include <bits/stdc++.h>
 using namespace std;
 int main()
