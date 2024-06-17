@@ -8,6 +8,7 @@ int main(){
     for(int i=0; i<4; i++){
         cin >> s[i];
     }
+    //Using ASCII of '.' and '#' 
     for(int i=0; i<3; i++){
         for(int j=0; j<3; j++){
             asciiSum = int(s[i][j]) + int(s[i][j+1]) + int(s[i+1][j]) + int(s[i+1][j+1]);
