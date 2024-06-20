@@ -1,4 +1,5 @@
 //brilliantadam
+//20/6/2024
 //https://leetcode.com/problems/magnetic-force-between-two-balls/description/
 #include <vector>
 #include <algorithm>
