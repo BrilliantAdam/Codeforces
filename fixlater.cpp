@@ -32,3 +32,46 @@ int main(){
     }
     return 0;
 }
+//##################################
+//##################################
+//##################################
+//##################################
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    int t, tmp;
+    long long x;
+    cin >> t;
+    while(t--){
+        bool flag = true;
+        cin >> x;
+        vector<int> a;
+        while(x){
+            a.push_back(x%10);
+            x /= 10;
+        }
+        reverse(a.begin(), a.end());
+        if(a[0] == 1 && a[a.size()-1] != 9){
+            tmp = 10 + a[1];
+            if(tmp%2 == 0){
+                if(tmp/2 -1 < 5){
+                    flag = false;
+                    break;
+                }
+            }
+            for(int i=2;i<a.size()-1; ++i){
+                tmp = 10 + a[i];
+                if(tmp%2 == 0){
+                    if(tmp/2 -1 < 5){
+                        flag = false;
+                        break;
+                    }
+                 }
+            }
+        }
+        else
+            flag = false;
+        (flag == true)? cout << "YES\n" : cout << "NO\n";
+    }
+    return 0;
+}
