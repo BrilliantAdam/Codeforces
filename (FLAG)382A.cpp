@@ -6,10 +6,12 @@
 using namespace std;
 int main()
 {
+	
     string a, b;
 	getline(cin, a, '|');
 	getline(cin, b);
 	char ch;
+	
 	while (scanf(" %c", &ch) == 1)
 		if (a.length() <= b.length()) a += ch;
 		else b += ch;
